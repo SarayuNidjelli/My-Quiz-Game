@@ -8,21 +8,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
     <script src="p5.play.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
 
 
     <script>
+      //Your web app's Firebase configuration
       var firebaseConfig = {
     apiKey: "AIzaSyCiRdYJVdPZz54S_pEfdYwx4YQqr9GKKRE",
     authDomain: "quiz-game-99f08.firebaseapp.com",
+    databaseURL: "https://quiz-game-99f08-default-rtdb.firebaseio.com",
     projectId: "quiz-game-99f08",
     storageBucket: "quiz-game-99f08.appspot.com",
     messagingSenderId: "451953120376",
     appId: "1:451953120376:web:75c8d9144221a16101898d"
   };
+  
+      // // Initialize Firebase
+      // firebase.initializeApp(firebaseConfig);
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
     </script>
 
+    <script src="Contestant.js"></script>
+    <script src="Question.js"></script>
+    <script src="Quiz.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
   <body>
